@@ -1,0 +1,22 @@
+#GameScreen {
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+#GameScreen div {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 55.55px;
+  text-align: center;
+}
+
+.Clicked {
+  z-index: -1;
+}
+/*# sourceMappingURL=Styles.css.map */
