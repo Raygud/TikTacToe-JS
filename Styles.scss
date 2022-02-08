@@ -1,10 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 #GameScreen{
+    position: relative;
     margin: auto;
     width: 500px;
     height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     div{
+        transition: 500ms ease-in-out;
         background-color: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -15,4 +23,23 @@
 
 .Clicked{
     z-index: -1;
+}
+
+#Menu{
+    visibility: hidden;
+    position: absolute;
+    transition: 500ms ease-in-out;
+    top: 220px;
+    left: 110px;
+    font-size: 58px;
+    background-color: rgba(172, 255, 47, 0.678);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    &:hover{
+        background-color: rgba(172, 255, 47, 0.966);
+        transform: scale(1.05);
+        box-shadow: 8px 8px 8px rgba(68,68,68,0.6);
+
+    }
 }
